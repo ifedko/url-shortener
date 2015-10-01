@@ -1,0 +1,6 @@
+.bash_history
+.cache/
+.idea/
+.mysql_history
+.nano_history
+.vagrant/
