@@ -50,9 +50,9 @@ $ sudo nano /etc/hosts
  - Set AllowOverride to All and DocumentRoot in Apache config
  - Create database and set access data and base url (for example, http://localhost) in application configuration (see below)
  - Change javascript parameter "requestUri" to appropriate uri in
-  ```sh
-  /path/to/project/public/app/src/View/UrlShortener/index.php
-  ```
+ ```sh
+ /path/to/project/public/app/src/View/UrlShortener/index.php
+ ```
   For example:
   ```
   requestUri: "http://localhost/short_url"
