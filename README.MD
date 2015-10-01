@@ -20,7 +20,7 @@ $ cd ~/url-shortener/
 ```
  - Clone project from: 
 ```sh
-$ git clone  .
+$ git clone https://github.com/ifedko/url-shortener.git .
 ```
  - Run vagrant
 ```sh
@@ -36,9 +36,32 @@ $ sudo nano /etc/hosts
 ```
  - Open http://url-shortener.local:8081 in your browser (Vagrant uses port 8081 for host machine)
 
-### Project configuration
+### Manual
 
-Path to project configuration (database and application parameters):
+ - Create directory for project
+ ```sh
+ $ mkdir url-shortener
+ $ cd ~/url-shortener/
+ ```
+  - Clone project from:
+ ```sh
+ $ git clone https://github.com/ifedko/url-shortener.git .
+ ```
+ - Set AllowOverride to All and DocumentRoot in Apache config
+ - Create database and set access data and base url (for example, http://localhost) in application configuration (see below)
+ - Change javascript parameter "requestUri" to appropriate uri in
+  ```sh
+  /path/to/project/public/app/src/View/UrlShortener/index.php
+  ```
+  For example:
+  ```
+  requestUri: "http://localhost/short_url"
+  ```
+ - Run project in browser: http://localhost
+
+#### Project configuration
+
+Path to application configuration (database and application parameters):
 ```
 /path/to/project/app/config/config.ini
 ```
