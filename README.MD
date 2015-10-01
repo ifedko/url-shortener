@@ -53,10 +53,11 @@ $ sudo nano /etc/hosts
  ```sh
  /path/to/project/public/app/src/View/UrlShortener/index.php
  ```
-  For example:
-  ```
-  requestUri: "http://localhost/short_url"
-  ```
+
+ For example:
+ ```
+ requestUri: "http://localhost/short_url"
+ ```
  - Run project in browser: http://localhost
 
 #### Project configuration
