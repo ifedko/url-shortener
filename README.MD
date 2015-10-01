@@ -43,6 +43,11 @@ Path to project configuration (database and application parameters):
 /path/to/project/app/config/config.ini
 ```
 
+Sql for creating database:
+```
+/path/to/project/app/migrations/create_db.sql
+```
+
 ### Todos
 
  - Write Tests
