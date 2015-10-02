@@ -28,7 +28,6 @@ var ifedkoUrlShortener = {
 				self.loadShortUrl();
 				return false;
 			};
-			//this.form.addEventListener("submit", this.bindSubmitEvent);
 		} catch (error) {
 			this.log(error, "error");
 			this.warn("Sorry, service is unavailable. Please try again later.");
